@@ -1,0 +1,211 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+}
+
+.login-page {
+  height: 100vh;
+  margin: 0;
+  background: url('https://imagenescorporativas.aliar.com.co/Imagenes_Aliar/PRY_G/SRE_WEB/LoginAgriculturaTaller.jpg')
+    no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 40, 40, 0.25);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+.login-section {
+  position: relative;
+  z-index: 1;
+  width: 92%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 560px;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 2.7rem;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.22);
+}
+
+.brand-title {
+  text-align: center;
+  margin-bottom: 1.7rem;
+}
+
+.brand-title h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.05;
+  color: #2d4739;
+}
+
+.brand-title h1 span {
+  color: #5b8b3b;
+}
+
+.brand-subtitle {
+  text-align: center;
+  color: #5f6368;
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.form-label {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+
+.form-control,
+.form-select {
+  background: #f9f9f9;
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+  color: #333;
+  padding: 11px 14px;
+  transition: all 0.25s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #fff;
+  color: #333;
+  border-color: #2e508d;
+  box-shadow: 0 0 0 0.2rem rgba(46, 80, 141, 0.18);
+}
+
+.btn-primary {
+  background-color: #2e6fa3;
+  border: none;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: #245c87;
+}
+
+.alert-text {
+  color: #d62828;
+  margin-top: 10px;
+  font-weight: 700;
+  min-height: 22px;
+}
+
+footer {
+  margin-top: 1.7rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.dash-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.kpi-card {
+  min-height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kpi-title {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.kpi-value {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.chart-box {
+  height: 280px;
+  position: relative;
+}
+
+.table thead th {
+  font-size: 13px;
+}
+
+.table tbody td {
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    overflow-y: auto;
+    padding: 16px 0;
+  }
+
+  .login-form {
+    padding: 1.6rem;
+  }
+
+  .brand-title h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.login-link {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #2e6fa3;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #245c87;
+  text-decoration: underline;
+}
+
+.custom-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 16px;
+}
+
+.custom-modal-card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
